@@ -1,1 +1,11 @@
-Hi, checking to see if this works.
+**This code is written in python.**
+
+## To run the code:
+### Clone the repo:
+`git clone https://github.com/estifter/tandem.git`
+### Create virtual environment:
+`python -m venv venv`
+### Install dependencies:
+`pip install -r requirements.txt`
+## Run Code:
+`python trivia.py`
