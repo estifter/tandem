@@ -57,7 +57,7 @@ def ask_question(question, question_number, current_score):
 if __name__ == "__main__":
 
     questions = get_questions('questions.json')
-    question_order = random.sample(range(len(questions)), len(questions)) # create a random order of questions
+    question_order = random.sample(range(len(questions)), 10) # create a random order of questions
 
     score = 0 # store the user's score for printing
     for i, question_number in enumerate(question_order):
@@ -66,5 +66,5 @@ if __name__ == "__main__":
 
     clear_console()
     print(format_text('Thanks for playing!\n', 'orange'))
-    print(format_text(f'Final Score: {format_text(score, "cyan")} out of {len(questions)}\n', bold=True))
+    print(format_text(f'Final Score: {format_text(score, "cyan")} out of 10\n', bold=True))
     input('Press any key to exit.')
